@@ -47,9 +47,19 @@ a {
 }
 
 .heading.lv1 {
-    font-weight: 700;
     font-size: 6.2rem;
     line-height: 7.2rem; /* 116.129% */
+}
+
+.heading.lv2 {
+    font-size: 4.2rem;
+    line-height: 5.6rem; /* 133.333% */
+}
+
+.heading.lv3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .get-started-btn {
@@ -350,4 +360,88 @@ a {
 
 .active-students .avatar-list .icon + .icon {
     margin-left: -8px;
+}
+
+/* Feature */
+
+.feature {
+    padding-top: 130px;
+}
+
+.feature .body {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-top {
+    width: 50%;
+}
+
+.feature-top > .label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #767e7e;
+}
+
+.feature-top .desc {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #767e7e;
+}
+
+.feature-list {
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.feature-item {
+    width: 224px;
+}
+
+.feature-item:nth-of-type(2) {
+    margin-left: 153px;
+}
+.feature-item:nth-of-type(3) {
+    margin-left: 200px;
+}
+
+.feature-item .icon {
+    margin-bottom: 26px;
+    width: 102px;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.feature-item:first-of-type .icon {
+    background: #ffc147;
+}
+
+.feature-item:nth-of-type(2) .icon {
+    background: #ff947a;
+}
+
+.feature-item:nth-of-type(3) .icon {
+    background: #bf83ff;
+}
+
+.feature-list .desc {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.7rem; /* 168.75% */
+    color: #9da6a5;
 }
