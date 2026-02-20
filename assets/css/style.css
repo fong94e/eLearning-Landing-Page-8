@@ -47,6 +47,7 @@ a {
 }
 
 .heading.lv1 {
+    font-weight: 700;
     font-size: 6.2rem;
     line-height: 7.2rem; /* 116.129% */
 }
@@ -131,11 +132,12 @@ a {
 .hero .content-block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-start;
 }
 
 .hero .content-block .label {
+    margin-top: 93px;
     padding-bottom: 18px;
     font-size: 1.4rem;
     font-style: normal;
@@ -146,7 +148,7 @@ a {
 
 .hero .content-block .desc {
     display: inline-block;
-    width: 55%;
+    width: 64%;
     margin-top: 46px;
     margin-bottom: 52px;
     font-size: 1.8rem;
