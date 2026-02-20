@@ -29,7 +29,7 @@ a {
 }
 
 .btn {
-    padding: 11px 23px;
+    padding: 11px 24px 11px 23px;
     display: inline-block;
     font-size: 1.6rem;
     font-style: normal;
@@ -72,6 +72,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -32px;
+    z-index: 2;
 }
 
 .header .body {
@@ -117,6 +118,7 @@ a {
 
 .hero {
     padding-top: 30px;
+    padding-bottom: 79px;
 }
 
 .hero .body {
@@ -124,11 +126,11 @@ a {
 }
 
 .hero .content-block {
-    width: 48%;
+    width: 46%;
 }
 
 .hero .media-block {
-    width: 52%;
+    width: 54%;
 }
 
 /* Hero left */
@@ -183,12 +185,169 @@ a {
 /* Hero right */
 
 .hero .media-block {
+    position: relative;
     display: flex;
     justify-content: flex-end;
 }
 
 .hero .media-block .hero-image {
-    width: 567px;
-    height: 631px;
+    width: calc(100% - 65px);
+    /* height: 631px; */
     object-fit: cover;
+    background-color: #e0f7f6;
+}
+
+.hero-summary-course {
+    padding: 18px 25px;
+    position: absolute;
+    left: 3%;
+    top: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary-course .label {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #0d1111;
+}
+
+.hero-summary-course .icon {
+    position: relative;
+    display: block;
+}
+
+.hero-summary-course .icon::after {
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    display: block;
+    content: "";
+    width: 28px;
+    height: 4px;
+    background: #fff;
+}
+
+.hero-summary-schedules {
+    position: absolute;
+    left: 0;
+    bottom: 46px;
+    padding: 16px 25px 0 25px;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary-schedules .label {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #0d1111;
+}
+
+.hero-summary-schedules .icon:first-of-type {
+    padding-top: 6px;
+}
+
+.hero-summary-schedules .icon:nth-of-type(2) {
+    padding-top: 2px;
+}
+
+.hero-summary-schedules .icon:nth-of-type(3) {
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.hero-summary-schedules .icon:nth-of-type(3)::after {
+    position: absolute;
+    bottom: 23px;
+    left: 24px;
+    display: block;
+    content: "";
+    width: 26px;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+}
+
+.active-students {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.active-students {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 17px 35px;
+}
+
+.active-students > .label {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #0d1111;
+}
+
+.active-students .avatar-list {
+    display: flex;
+    padding-top: 7px;
+}
+
+.active-students .avatar-list .icon {
+    border-radius: 50%;
+}
+
+.active-students .avatar-list .icon:nth-of-type(1) {
+    background: #1ebfc1;
+}
+.active-students .avatar-list .icon:nth-of-type(2) {
+    background: #ffc147;
+}
+.active-students .avatar-list .icon:nth-of-type(3) {
+    background: #ff947a;
+}
+.active-students .avatar-list .icon:nth-of-type(4) {
+    background: #bf83ff;
+}
+.active-students .avatar-list .icon:nth-of-type(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    background: #1ebfc1;
+}
+
+.active-students .avatar-list .icon:nth-of-type(5) .label {
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.active-students .avatar-list .icon + .icon {
+    margin-left: -8px;
 }
