@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #1ebfc1;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -31,9 +35,30 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color: #1ebfc1;
+    color: var(--primary-color);
     border-radius: 6px;
-    border: 1px solid #1ebfc1;
+    border: 1px solid var(--primary-color);
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 700;
+    color: #0d1111;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 7.2rem; /* 116.129% */
+}
+
+.get-started-btn {
+    padding: 20px 41px;
+    font-size: 1.8rem;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    background: var(--primary-color);
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
 }
 
 /* Header */
@@ -81,4 +106,83 @@ a {
     font-weight: 400;
     color: #494949;
     border: transparent;
+}
+
+/* Hero */
+
+.hero {
+    padding-top: 30px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .content-block {
+    width: 48%;
+}
+
+.hero .media-block {
+    width: 52%;
+}
+
+/* Hero left */
+
+.hero .content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero .content-block .label {
+    padding-bottom: 18px;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #767e7e;
+}
+
+.hero .content-block .desc {
+    display: inline-block;
+    width: 55%;
+    margin-top: 46px;
+    margin-bottom: 52px;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem; /* 177.778% */
+    color: #9da6a5;
+}
+
+.hero .content-block .cta-group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero .cta-group .play {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 62px;
+    background: #fff;
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Hero right */
+
+.hero .media-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero .media-block .hero-image {
+    width: 567px;
+    height: 631px;
+    object-fit: cover;
 }
