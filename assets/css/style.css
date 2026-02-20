@@ -29,7 +29,7 @@ a {
 }
 
 .btn {
-    padding: 12px 24px;
+    padding: 11px 23px;
     display: inline-block;
     font-size: 1.6rem;
     font-style: normal;
@@ -76,13 +76,16 @@ a {
 
 .header .body {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.header .logo {
+    margin-right: auto;
 }
 
 .header .nav ul {
     display: flex;
-    gap: 38px;
+    gap: 40px;
 }
 
 .header .nav li a {
@@ -101,6 +104,7 @@ a {
 
 .header .action {
     display: flex;
+    margin-left: 13%;
 }
 
 .header .sign-in-btn {
