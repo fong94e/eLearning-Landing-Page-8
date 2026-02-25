@@ -677,11 +677,6 @@ a {
     gap: 30px;
 }
 
-.feedback .btn-feedback.active {
-    background: var(--primary-color);
-    color: white;
-}
-
 .btn-feedback {
     width: 50px;
     height: 50px;
@@ -697,6 +692,12 @@ a {
 
     cursor: pointer;
     transition: 0.2s;
+}
+
+.feedback .btn-feedback:hover {
+    background: var(--primary-color);
+    color: white;
+    border: transparent;
 }
 
 .image-block {
@@ -756,4 +757,79 @@ a {
     height: 78px;
     bottom: 100px;
     left: 10px;
+}
+
+/* Admit */
+
+.admit {
+    margin-top: 130px;
+    background: #def6f5;
+}
+
+.admit .body {
+    padding-top: 76px;
+    padding-bottom: 88px;
+    display: flex;
+
+    align-items: center;
+}
+
+.admit .desc {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #767e7e;
+}
+
+.admit .content {
+    margin-right: 35%;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 130px;
+}
+
+.footer .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .body .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .body .row .column {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #2e2e2e;
+}
+
+.footer .body .row .column ul {
+    margin-top: 18px;
+}
+
+.footer .body .row .column ul li {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #535353;
+}
+
+.footer .body .row .column ul li span {
+    margin-left: 8px;
+}
+
+.copyright {
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
