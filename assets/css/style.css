@@ -63,6 +63,7 @@ a {
 }
 
 .get-started-btn {
+    cursor: pointer;
     padding: 20px 41px;
     font-size: 1.8rem;
     color: #fff;
@@ -561,6 +562,11 @@ a {
 
 .popular-item > .body .desc {
     margin-top: 6px;
+    color: #9da6a5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .popular-item > .body .fee strong {
@@ -572,7 +578,29 @@ a {
 }
 
 .popular-item > .body > .info {
+    display: flex;
+    gap: 26px;
     margin-top: 18px;
+    margin-left: 16px;
+}
+.popular-item .info span {
+    position: relative;
+    color: #9da6a5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.popular-item .info span::before {
+    position: absolute;
+    left: -16px;
+    top: 7px;
+    display: block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
 }
 
 .popular-bottom .body {

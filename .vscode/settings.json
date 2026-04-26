@@ -24,5 +24,6 @@
     "prettier.singleAttributePerLine": false,
 
     // giữ dấu > ở dòng mới đúng chuẩn
-    "prettier.bracketSameLine": false
+    "prettier.bracketSameLine": false,
+    "html-to-css-autocompletion.autocompletionFilesScope": "linked-files"
 }
